@@ -1,9 +1,12 @@
 export const defaultAppContextValue = (
   {
     searchQuery = '',
-    setSearchQuery = () => {
-    },
+    setSearchQuery = () => {},
+    data = [],
+    setData = () => {},
   }) => ({
+  data,
+  setData,
   searchQuery,
-  setSearchQuery,
+  setSearchQuery
 })
