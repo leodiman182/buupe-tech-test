@@ -1,16 +1,20 @@
 import {ReactNode, useMemo, useState} from "react";
 import AppContext from ".";
 import TProduct from "../types/TProduct.ts";
+import {TPriceFilter} from "../types/TPriceFilter.ts";
 
 const AppProvider = ({ children }: ProviderProps) => {
   const [data, setData] = useState<TProduct[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [priceFilter, setPriceFilter] = useState <TPriceFilter | undefined>();
 
   const dependencies = [
     data,
     setData,
     searchQuery,
-    setSearchQuery
+    setSearchQuery,
+    priceFilter,
+    setPriceFilter
   ];
 
   const context = useMemo(
@@ -18,13 +22,14 @@ const AppProvider = ({ children }: ProviderProps) => {
       data,
       setData,
       searchQuery,
-      setSearchQuery
+      setSearchQuery,
+      priceFilter,
+      setPriceFilter
     }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     dependencies,
   );
 
-  return <AppContext.Provider value={context}>{children}</AppContext.Provider>;
+  return <AppContext.Provider value={ context }>{ children }</AppContext.Provider>;
 }
 
 export default AppProvider;

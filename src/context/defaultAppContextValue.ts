@@ -4,9 +4,13 @@ export const defaultAppContextValue = (
     setSearchQuery = () => {},
     data = [],
     setData = () => {},
+    priceFilter = undefined,
+    setPriceFilter = () => {},
   }) => ({
   data,
   setData,
   searchQuery,
-  setSearchQuery
+  setSearchQuery,
+  priceFilter,
+  setPriceFilter
 })

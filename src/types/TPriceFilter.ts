@@ -1,0 +1,1 @@
+export type TPriceFilter = undefined | 'below' | 'between' | 'above';
