@@ -1,3 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "../../node_modules/tailwindcss/dist/lib.d.mts";
+
+:root {
+    --primary: #f83e87;
+    --secondary: #ffa68d;
+    --dark: #424242;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Mulish", sans-serif;
+}
