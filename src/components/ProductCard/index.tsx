@@ -1,4 +1,5 @@
 import TProduct from "../../types/TProduct.ts";
+import formatToCurrency from "../../utils/formatCurrency.ts";
 
 interface IProductCard {
   product: TProduct;
@@ -23,7 +24,7 @@ export default function ProductCard({product}: IProductCard) {
         {productDescription}
       </span>
         <p>
-          {productPrice}
+          {formatToCurrency(productPrice)}
         </p>
       </div>
     </div>

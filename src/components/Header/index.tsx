@@ -2,6 +2,7 @@ import {imageUrl} from "../../assets/logo.ts";
 import useAppContext from "../../context/useAppContext.ts";
 import {ChangeEvent, FormEvent, FormEventHandler, useState} from "react";
 import Button from "../Button";
+import {IoMdCloseCircleOutline} from "react-icons/io";
 
 export default function Header() {
   const {setSearchQuery} = useAppContext();
@@ -12,6 +13,7 @@ export default function Header() {
   const handleSearch: FormEventHandler<HTMLFormElement> = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSearchQuery(query);
+    console.log('chegou aqui')
   };
 
   return (
@@ -22,13 +24,16 @@ export default function Header() {
           <img className='' src={imageUrl} alt=""/>
         </div>
         <form onSubmit={handleSearch} className='w-full lg:max-w-md flex flex-row items-center gap-2' action="">
-          <input
-            value={query}
-            onChange={handleChange}
-            type="text"
-            placeholder='Buscar produtos...'
-            className='border rounded-md pl-3 p-1 border-gray-400 w-full focus-visible:outline-none'
-          />
+          <div className='w-full relative'>
+            <input
+              value={query}
+              onChange={handleChange}
+              type="text"
+              placeholder='Buscar produtos...'
+              className='border rounded-md pl-3 p-1 border-gray-400 w-full focus-visible:outline-none'
+            />
+            {query !== '' && <IoMdCloseCircleOutline onClick={reset} className='absolute right-1 top-1 text-stone-500 hover:text-red-700 cursor-pointer z-10' size={25} />}
+          </div>
           <Button>Buscar</Button>
         </form>
       </section>
