@@ -1,5 +1,5 @@
 import useAppContext from "../context/useAppContext.ts";
-import products from "../mock/mock.ts";
+import products from "../mock/products.ts";
 
 const useResetSearch = () => {
   const { setData } = useAppContext();
