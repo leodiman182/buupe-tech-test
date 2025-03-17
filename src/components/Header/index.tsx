@@ -5,6 +5,7 @@ import Button from "../Button";
 import {IoMdCloseCircleOutline} from "react-icons/io";
 import useResetSearch from "../../hooks/useResetSearch.ts";
 import useFilterProducts from "../../hooks/useFilterProducts.ts";
+import {Link} from "react-router";
 
 export default function Header() {
   const { searchQuery, setSearchQuery } = useAppContext();
@@ -37,7 +38,9 @@ export default function Header() {
       <section
         className='max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-4 w-full'>
         <div className=''>
-          <img className='' src={ imageUrl } alt=""/>
+          <Link to='https://www.buupe.com/register'>
+            <img className='' src={ imageUrl } alt=""/>
+          </Link>
         </div>
         <form onSubmit={ handleSearch } className='w-full lg:max-w-md flex flex-row items-center gap-2' action="">
           <div className='w-full relative'>

@@ -14,7 +14,7 @@ export default function MainSection() {
 
   return (
     <article className='w-full lg:w-5/6 p-4 lg:pl-12'>
-      <section className='w-full grid grid-cols-1 gap-3 text-center'>
+      <section className='w-full grid grid-cols-1 gap-4 lg:gap-0 text-center'>
         {!data.length ? (
           <NotFound />
         ) : data.map((product, index) => (
