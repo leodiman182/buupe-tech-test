@@ -5,7 +5,7 @@ import TProduct from "../types/TProduct.ts";
 import products from "../mock/products.ts";
 
 const useFilterByPrice = () => {
-  const { data, priceFilter, setData } = useAppContext();
+  const { searchQuery, data, priceFilter, setData } = useAppContext();
   const resetSearch = useResetSearch();
 
   return useCallback(() => {
@@ -13,20 +13,22 @@ const useFilterByPrice = () => {
       return resetSearch();
     }
 
+    const list = searchQuery !== '' ? data : products;
+
     let filtered: TProduct[];
 
     switch (priceFilter) {
       case "below":
-        filtered = products.filter((product) => product.productPrice < 50);
+        filtered = list.filter((product) => product.productPrice < 50);
         break;
       case "between":
-        filtered = products.filter(
+        filtered = list.filter(
           (product) =>
             product.productPrice >= 50 && product.productPrice <= 100
         );
         break;
       case "above":
-        filtered = products.filter((product) => product.productPrice > 100);
+        filtered = list.filter((product) => product.productPrice > 100);
         break;
       default:
         filtered = data;

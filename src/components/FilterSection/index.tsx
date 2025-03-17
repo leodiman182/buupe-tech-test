@@ -2,6 +2,7 @@ import Filter from "./Filter";
 import useAppContext from "../../context/useAppContext.ts";
 import {useEffect} from "react";
 import useFilterByPrice from "../../hooks/useFilterByPrice.ts";
+import {isPlural} from "../../utils/isPlural.ts";
 
 type TFilterList = { description: string, keyword: string }[];
 
@@ -21,7 +22,7 @@ const filterList: TFilterList = [
 ];
 
 export default function FilterSection() {
-  const { priceFilter, setPriceFilter} = useAppContext();
+  const { searchQuery, data, priceFilter, setPriceFilter} = useAppContext();
   const filterByPrice = useFilterByPrice();
 
   function clearFilter() {
@@ -32,14 +33,23 @@ export default function FilterSection() {
     filterByPrice();
   }, [priceFilter]);
 
+  const plural = isPlural(data.length)
+
   return (
     <>
       <aside className='w-1/6 hidden lg:block'>
         <div className='border-r border-gray-400 py-8 h-full'>
-          <h2 className='text-2xl font-medium mb-8'>
-            Filtros
-          </h2>
-          <div>
+
+            { searchQuery !== '' && (
+              <>
+                <h2 className='text-2xl font-medium8'>{searchQuery.toUpperCase()}</h2>
+                <p>
+                  {data.length} produto{plural} encontrado{plural}
+                </p>
+              </>
+            ) }
+
+          <div className='mt-8'>
             <h3 className='text-lg mb-2 font-medium'>Preço</h3>
             { filterList.map((filter) => (
               <Filter filter={filter} />
