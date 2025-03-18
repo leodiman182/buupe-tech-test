@@ -5,6 +5,7 @@ import useResetSearch from "../../hooks/useResetSearch.ts";
 import NotFound from "../NotFound";
 import InfiniteScroll from "react-infinite-scroll-component";
 import TProduct from "../../types/TProduct.ts";
+import Loading from "../Loading";
 
 export default function MainSection() {
   const { data } = useAppContext();
@@ -30,7 +31,7 @@ export default function MainSection() {
         dataLength={visibleProducts.length}
         next={fetchMoreData}
         hasMore={visibleProducts.length < data.length}
-        loader={<h4>Carregando...</h4>}
+        loader={<Loading />}
       >
         <section className='w-full grid grid-cols-1 gap-4 lg:gap-0 text-center'>
           {!visibleProducts.length ? (
