@@ -1,0 +1,11 @@
+// HEADER ID
+export const headerComponent = 'header-component';
+export const searchComponent = 'search-component';
+export const searchButtonComponent = 'search-button-component';
+export const closeIcon = 'close-icon';
+export const logoLink = 'logo-link';
+
+// FOOTER ID
+export const footerComponent = 'footer-component';
+export const linkedinLink = 'linkedin-link-component';
+export const githubLink = 'github-link-component';
