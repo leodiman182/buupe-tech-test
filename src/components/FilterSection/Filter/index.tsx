@@ -18,8 +18,8 @@ export default function Filter({ filter }: FilterProps) {
 
   const className = `${
     priceFilter === filter.keyword 
-    ? 'text-[#f83e87] font-semibold'
-    : 'text-gray-700 hover:text-[#f83e87]'} hover:underline cursor-pointer`
+    ? 'text-primary font-semibold'
+    : 'text-gray-700 hover:text-primary'} hover:underline cursor-pointer`
 
   return (
     <div

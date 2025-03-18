@@ -52,7 +52,9 @@ export default function FilterSection() {
           <div className='mt-8'>
             <h3 className='text-lg mb-2 font-medium'>Preço</h3>
             { filterList.map((filter) => (
-              <Filter filter={filter} />
+              <div key={filter.keyword}>
+                <Filter filter={filter} />
+              </div>
             )) }
             {priceFilter && <div
               className='mt-2 text-gray-500 hover:text-red-600 cursor-pointer'
