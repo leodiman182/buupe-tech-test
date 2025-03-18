@@ -4,22 +4,19 @@ import Header from './index.tsx';
 import '@testing-library/jest-dom';
 import {closeIcon, headerComponent, searchButtonComponent, searchComponent, logoLink} from '../../utils/testid-list.ts';
 
-// Mock do useAppContext
 vi.mock('../../context/useAppContext.ts', () => ({
   default: () => ({
     searchQuery: '',
-    setSearchQuery: vi.fn(), // Função simulada
+    setSearchQuery: vi.fn(),
   }),
 }));
 
-// Mock do useFilterProducts
 vi.mock('../../hooks/useFilterProducts.ts', () => ({
-  default: vi.fn(() => vi.fn()), // Retorna uma função simulada
+  default: vi.fn(() => vi.fn()),
 }));
 
-// Mock do useResetSearch
 vi.mock('../../hooks/useResetSearch.ts', () => ({
-  default: vi.fn(() => vi.fn()), // Retorna uma função simulada
+  default: vi.fn(() => vi.fn()),
 }));
 
 describe('Expect Header component', () => {
