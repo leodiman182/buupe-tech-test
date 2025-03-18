@@ -15,10 +15,10 @@ export default function ProductCard({ product }: IProductCard) {
   } = product;
 
   return (
-    <div className='bg-white lg:border-y border-gray-200 rounded-md lg:rounded-none p-6 lg:p-8 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-10 hover:scale-101 hover:shadow-md duration-110'>
+    <div className='group bg-white lg:border-y border-gray-200 rounded-md lg:rounded-none p-6 lg:p-8 flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-10'>
       <img src={ productImg } alt={ productDescription } className='lg:max-w-[320px]' />
       <div className='text-start'>
-        <h4 className='text-2xl text-gray-800 font-bold'>
+        <h4 className='text-2xl text-gray-800 font-bold group-hover:text-primary'>
           { productName }
         </h4>
           <span className='text-sm text-gray-600'>

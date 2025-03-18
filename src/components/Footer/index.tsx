@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer
-      className='bg-gradient-to-r from-primary to-secondary w-full text-center text-white py-2 lg:py-3 fixed bottom-0 text-sm lg:text-base flex flex-row items-center justify-between px-8'
+      className='bg-gradient-to-r from-primary to-secondary w-full text-center text-white py-2 lg:py-3 fixed bottom-0 text-sm lg:text-base flex flex-col gap-4 lg:gap-0 lg:flex-row items-center justify-between px-8'
       data-testid={ footerComponent }
     >
       <h2 className='font-medium'>

@@ -34,12 +34,15 @@ export default function Header() {
   }, [searchQuery])
 
   return (
-    <header data-testid={ headerComponent } className='w-full bg-white p-4'>
+    <header
+      data-testid={headerComponent}
+      className="w-full bg-white p-4 fixed top-0 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[3px] after:bg-gradient-to-r after:from-secondary after:to-primary"
+    >
       <section
         className='max-w-screen-xl mx-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-4 w-full'>
-        <div className=''>
+        <div>
           <a data-testid={ logoLink } href='https://www.buupe.com/register' target='_blank' rel='noopener noreferrer'>
-            <img src={imageUrl} alt='Logo' />
+            <img className='hover:scale-105 duration-125' src={imageUrl} alt='Logo' />
           </a>
         </div>
         <form onSubmit={ handleSearch } className='w-full lg:max-w-md flex flex-row items-center gap-2' action="">

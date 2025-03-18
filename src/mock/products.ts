@@ -120,6 +120,186 @@ const products: TProduct[] = [
     productDescription: "Xiaomi Mi 10T Pro com 256GB",
     productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
     productPrice: 200.00
+  },
+  {
+    productName: "Produto 21",
+    productDescription: "Descrição do Produto 21",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 210.00
+  },
+  {
+    productName: "Produto 22",
+    productDescription: "Descrição do Produto 22",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 220.00
+  },
+  {
+    productName: "Produto 23",
+    productDescription: "Descrição do Produto 23",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 230.00
+  },
+  {
+    productName: "Produto 24",
+    productDescription: "Descrição do Produto 24",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 240.00
+  },
+  {
+    productName: "Produto 25",
+    productDescription: "Descrição do Produto 25",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 250.00
+  },
+  {
+    productName: "Produto 26",
+    productDescription: "Descrição do Produto 26",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 260.00
+  },
+  {
+    productName: "Produto 27",
+    productDescription: "Descrição do Produto 27",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 270.00
+  },
+  {
+    productName: "Produto 28",
+    productDescription: "Descrição do Produto 28",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 280.00
+  },
+  {
+    productName: "Produto 29",
+    productDescription: "Descrição do Produto 29",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 290.00
+  },
+  {
+    productName: "Produto 30",
+    productDescription: "Descrição do Produto 30",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 300.00
+  },
+  {
+    productName: "Produto 31",
+    productDescription: "Descrição do Produto 31",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 310.00
+  },
+  {
+    productName: "Produto 32",
+    productDescription: "Descrição do Produto 32",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 320.00
+  },
+  {
+    productName: "Produto 33",
+    productDescription: "Descrição do Produto 33",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 330.00
+  },
+  {
+    productName: "Produto 34",
+    productDescription: "Descrição do Produto 34",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 340.00
+  },
+  {
+    productName: "Produto 35",
+    productDescription: "Descrição do Produto 35",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 350.00
+  },
+  {
+    productName: "Produto 36",
+    productDescription: "Descrição do Produto 36",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 360.00
+  },
+  {
+    productName: "Produto 37",
+    productDescription: "Descrição do Produto 37",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 370.00
+  },
+  {
+    productName: "Produto 38",
+    productDescription: "Descrição do Produto 38",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 380.00
+  },
+  {
+    productName: "Produto 39",
+    productDescription: "Descrição do Produto 39",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 390.00
+  },
+  {
+    productName: "Produto 40",
+    productDescription: "Descrição do Produto 40",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 400.00
+  },
+  {
+    productName: "Produto 41",
+    productDescription: "Descrição do Produto 41",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 410.00
+  },
+  {
+    productName: "Produto 42",
+    productDescription: "Descrição do Produto 42",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 420.00
+  },
+  {
+    productName: "Produto 43",
+    productDescription: "Descrição do Produto 43",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 430.00
+  },
+  {
+    productName: "Produto 44",
+    productDescription: "Descrição do Produto 44",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 440.00
+  },
+  {
+    productName: "Produto 45",
+    productDescription: "Descrição do Produto 45",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 450.00
+  },
+  {
+    productName: "Produto 46",
+    productDescription: "Descrição do Produto 46",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 460.00
+  },
+  {
+    productName: "Produto 47",
+    productDescription: "Descrição do Produto 47",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 470.00
+  },
+  {
+    productName: "Produto 48",
+    productDescription: "Descrição do Produto 48",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 480.00
+  },
+  {
+    productName: "Produto 49",
+    productDescription: "Descrição do Produto 49",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 490.00
+  },
+  {
+    productName: "Produto 50",
+    productDescription: "Descrição do Produto 50",
+    productImg: "https://st2.depositphotos.com/1017228/9399/i/450/depositphotos_93990140-stock-photo-cheerful-woman-showing-blank-smartphone.jpg",
+    productPrice: 500.00
   }
 ];
 
