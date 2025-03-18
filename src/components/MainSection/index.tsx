@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import useAppContext from "../../context/useAppContext.ts";
-import useResetSearch from "../../hooks/useResetSearch.ts";
 import NotFound from "../NotFound";
 import InfiniteScroll from "react-infinite-scroll-component";
 import TProduct from "../../types/TProduct.ts";
@@ -9,12 +8,10 @@ import Loading from "../Loading";
 
 export default function MainSection() {
   const { data } = useAppContext();
-  const resetSearch = useResetSearch();
   const [itemsToShow, setItemsToShow] = useState(10);
   const [visibleProducts, setVisibleProducts] = useState<TProduct[]>([]);
 
   useEffect(() => {
-    resetSearch();
     setVisibleProducts(data.slice(0, itemsToShow));
   }, [data]);
 
