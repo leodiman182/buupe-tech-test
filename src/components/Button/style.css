@@ -1,6 +1,0 @@
-.button {
-    background-color: var(--primary);
-}
-.button:hover {
-    background-color: var(--secondary);
-}
