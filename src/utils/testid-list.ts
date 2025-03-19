@@ -19,3 +19,6 @@ export const priceFilterBelow = 'price-filter-below';
 export const priceFilterBetween = 'price-filter-between';
 export const priceFilterAbove = 'price-filter-above';
 export const clearFilterButton = 'clear-filter-button';
+
+
+export const backToTopButton = "back-to-top-button";
