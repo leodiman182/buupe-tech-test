@@ -7,6 +7,7 @@ const AppProvider = ({ children }: ProviderProps) => {
   const [data, setData] = useState<TProduct[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [priceFilter, setPriceFilter] = useState <TPriceFilter | undefined>();
+  const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState<boolean>(false);
 
   const dependencies = [
     data,
@@ -14,7 +15,9 @@ const AppProvider = ({ children }: ProviderProps) => {
     searchQuery,
     setSearchQuery,
     priceFilter,
-    setPriceFilter
+    setPriceFilter,
+    isFilterDrawerOpen,
+    setIsFilterDrawerOpen
   ];
 
   const context = useMemo(
@@ -24,7 +27,9 @@ const AppProvider = ({ children }: ProviderProps) => {
       searchQuery,
       setSearchQuery,
       priceFilter,
-      setPriceFilter
+      setPriceFilter,
+      isFilterDrawerOpen,
+      setIsFilterDrawerOpen
     }),
     dependencies,
   );

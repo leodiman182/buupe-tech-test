@@ -5,7 +5,7 @@ import TProduct from "../types/TProduct.ts";
 import products from "../mock/products.ts";
 
 const useFilterByPrice = () => {
-  const { searchQuery, data, priceFilter, setData } = useAppContext();
+  const { searchQuery, data, priceFilter, setData, setIsFilterDrawerOpen } = useAppContext();
   const resetSearch = useResetSearch();
 
   return useCallback(() => {
@@ -35,6 +35,7 @@ const useFilterByPrice = () => {
         break;
     }
 
+    setIsFilterDrawerOpen(false)
     setData(filtered);
   }, [priceFilter, data, setData, resetSearch]);
 };

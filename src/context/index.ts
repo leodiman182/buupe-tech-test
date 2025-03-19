@@ -15,5 +15,7 @@ interface IAppContext {
   searchQuery: string;
   setSearchQuery: Dispatch<SetStateAction<string>>;
   priceFilter: undefined | TPriceFilter,
-  setPriceFilter: Dispatch<SetStateAction<TPriceFilter | undefined>>
+  setPriceFilter: Dispatch<SetStateAction<TPriceFilter | undefined>>;
+  isFilterDrawerOpen: boolean;
+  setIsFilterDrawerOpen: Dispatch<SetStateAction<boolean>>;
 }

@@ -6,11 +6,15 @@ export const defaultAppContextValue = (
     setData = () => {},
     priceFilter = undefined,
     setPriceFilter = () => {},
+    isFilterDrawerOpen = false,
+    setIsFilterDrawerOpen = () => {}
   }) => ({
   data,
   setData,
   searchQuery,
   setSearchQuery,
   priceFilter,
-  setPriceFilter
+  setPriceFilter,
+  isFilterDrawerOpen,
+  setIsFilterDrawerOpen
 })

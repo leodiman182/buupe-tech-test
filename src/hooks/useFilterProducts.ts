@@ -4,7 +4,7 @@ import useResetSearch from "./useResetSearch.ts";
 import products from "../mock/products.ts";
 
 const useFilterProducts = () => {
-  const { searchQuery ,setData, data } = useAppContext();
+  const { searchQuery ,setData, data, priceFilter } = useAppContext();
   const resetSearch = useResetSearch();
 
   return useCallback(() => {
@@ -14,7 +14,9 @@ const useFilterProducts = () => {
 
     const query = searchQuery.toLowerCase();
 
-    const filtered = products.filter((product) => {
+    const list = priceFilter !== undefined ? data : products;
+
+    const filtered = list.filter((product) => {
       const nameMatch = product.productName.toLowerCase().includes(query);
       const descriptionMatch = product.productDescription.toLowerCase().includes(query);
       return nameMatch || descriptionMatch;

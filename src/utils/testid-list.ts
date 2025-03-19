@@ -11,6 +11,7 @@ export const linkedinLink = 'linkedin-link-component';
 export const githubLink = 'github-link-component';
 
 // FILTER SECTION ID
+export const mobileFilterSectionComponent = 'mobile-filter-section-component';
 export const filterSectionComponent = 'filter-section-component';
 export const searchQueryTitle = 'search-query-title';
 export const productCount = 'product-count';
