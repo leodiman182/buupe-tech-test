@@ -1,7 +1,5 @@
 import Filter from "./Filter";
 import useAppContext from "../../context/useAppContext.ts";
-import {useEffect} from "react";
-import useFilterByPrice from "../../hooks/useFilterByPrice.ts";
 import {isPlural} from "../../utils/isPlural.ts";
 import {
   filterSectionComponent, mobileFilterSectionComponent,
@@ -18,12 +16,9 @@ export default function FilterSection() {
   const {
     searchQuery,
     data,
-    priceFilter,
     isFilterDrawerOpen,
     setIsFilterDrawerOpen
   } = useAppContext();
-
-  const filterByPrice = useFilterByPrice();
 
   const isScreenLarge = useMediaQuery(theme.breakpoints.up("lg"));
   const plural = isPlural(data.length);
@@ -31,10 +26,6 @@ export default function FilterSection() {
   const toggleDrawer = (newOpen: boolean) => () => {
     setIsFilterDrawerOpen(newOpen);
   };
-
-  useEffect(() => {
-    filterByPrice();
-  }, [priceFilter]);
 
   return !isScreenLarge ? (
     <Drawer sx={{ maxWidth: '95%' }} open={ isFilterDrawerOpen } onClose={ toggleDrawer(false) }>

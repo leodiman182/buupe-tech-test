@@ -5,6 +5,7 @@ import {TPriceFilter} from "../types/TPriceFilter.ts";
 
 const AppProvider = ({ children }: ProviderProps) => {
   const [data, setData] = useState<TProduct[]>([]);
+  const [visibleProducts, setVisibleProducts] = useState<TProduct[]>([]);
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [priceFilter, setPriceFilter] = useState <TPriceFilter | undefined>();
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState<boolean>(false);
@@ -12,6 +13,8 @@ const AppProvider = ({ children }: ProviderProps) => {
   const dependencies = [
     data,
     setData,
+    visibleProducts,
+    setVisibleProducts,
     searchQuery,
     setSearchQuery,
     priceFilter,
@@ -24,6 +27,8 @@ const AppProvider = ({ children }: ProviderProps) => {
     () => ({
       data,
       setData,
+      visibleProducts,
+      setVisibleProducts,
       searchQuery,
       setSearchQuery,
       priceFilter,

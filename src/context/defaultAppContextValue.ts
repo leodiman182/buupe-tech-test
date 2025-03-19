@@ -4,6 +4,8 @@ export const defaultAppContextValue = (
     setSearchQuery = () => {},
     data = [],
     setData = () => {},
+    visibleProducts = [],
+    setVisibleProducts = () => {},
     priceFilter = undefined,
     setPriceFilter = () => {},
     isFilterDrawerOpen = false,
@@ -11,6 +13,8 @@ export const defaultAppContextValue = (
   }) => ({
   data,
   setData,
+  visibleProducts,
+  setVisibleProducts,
   searchQuery,
   setSearchQuery,
   priceFilter,

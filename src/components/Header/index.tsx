@@ -10,7 +10,7 @@ import {MdFilterAlt} from "react-icons/md";
 import ClearFilterButton from "../ClearFilterButton";
 
 export default function Header() {
-  const { searchQuery, setSearchQuery, isFilterDrawerOpen, setIsFilterDrawerOpen } = useAppContext();
+  const { searchQuery, setSearchQuery, isFilterDrawerOpen, setIsFilterDrawerOpen, priceFilter} = useAppContext();
   const resetSearch = useResetSearch();
   const filterProducts = useFilterProducts();
   const [query, setQuery] = useState<string>('');
@@ -35,7 +35,7 @@ export default function Header() {
 
   useEffect(() => {
     filterProducts();
-  }, [searchQuery])
+  }, [searchQuery, priceFilter])
 
   return (
     <header

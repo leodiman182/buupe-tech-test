@@ -3,13 +3,11 @@ import ProductCard from "./ProductCard";
 import useAppContext from "../../context/useAppContext.ts";
 import NotFound from "../NotFound";
 import InfiniteScroll from "react-infinite-scroll-component";
-import TProduct from "../../types/TProduct.ts";
 import Loading from "../Loading";
 
 export default function MainSection() {
-  const { data } = useAppContext();
+  const { data, visibleProducts, setVisibleProducts } = useAppContext();
   const [itemsToShow, setItemsToShow] = useState(10);
-  const [visibleProducts, setVisibleProducts] = useState<TProduct[]>([]);
 
   useEffect(() => {
     setVisibleProducts(data.slice(0, itemsToShow));

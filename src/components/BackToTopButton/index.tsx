@@ -1,10 +1,10 @@
-import {IconButton, styled, useMediaQuery} from "@mui/material";
+import {IconButton, IconButtonProps, styled, useMediaQuery} from "@mui/material";
 import {theme} from "../../styles/ThemeProvider.ts";
 import {FaArrowAltCircleUp} from "react-icons/fa";
 import {useEffect, useState} from "react";
 import {backToTopButton} from "../../utils/testid-list.ts";
 
-interface StyledButtonProps {
+interface StyledButtonProps extends IconButtonProps {
   isScreenLarge: boolean;
 }
 

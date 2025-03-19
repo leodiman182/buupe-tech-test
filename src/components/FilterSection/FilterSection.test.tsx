@@ -38,7 +38,7 @@ vi.mock('../../context/useAppContext.ts', () => ({
   }),
 }));
 
-vi.mock('../../hooks/useFilterByPrice.ts', () => ({
+vi.mock('../../hooks/useFilterProducts.ts', () => ({
   default: vi.fn(() => vi.fn()),
 }));
 

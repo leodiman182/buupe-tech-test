@@ -10,11 +10,13 @@ const AppContext = createContext<IAppContext>(
 export default AppContext;
 
 interface IAppContext {
-  data: TProduct[],
-  setData: Dispatch<SetStateAction<TProduct[]>>,
+  data: TProduct[];
+  setData: Dispatch<SetStateAction<TProduct[]>>;
+  visibleProducts: TProduct[];
+  setVisibleProducts: Dispatch<SetStateAction<TProduct[]>>;
   searchQuery: string;
   setSearchQuery: Dispatch<SetStateAction<string>>;
-  priceFilter: undefined | TPriceFilter,
+  priceFilter: undefined | TPriceFilter;
   setPriceFilter: Dispatch<SetStateAction<TPriceFilter | undefined>>;
   isFilterDrawerOpen: boolean;
   setIsFilterDrawerOpen: Dispatch<SetStateAction<boolean>>;
